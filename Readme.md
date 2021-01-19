@@ -14,14 +14,11 @@ In order to generate structured music, the system utilizes different hierarchica
     - Chord Sequences consist of chords, which then consist of notes.
 
 # Generation
-The generative process is conducted by the top-level module "Composer". First, general characteristics such as tempo, scale, and general structure (sequence of sections on a form like ABAC" is generated. 
-Then, instructive parameters for the generation process are generated. These are contained in the dictionaries "chord_info", "metric_info", and "melodic_info".
-Upon generating each section, these dictionaries are passed to the constructor of the Section object. For each new section, some of these remain the same, and some change. 
-This is to ensure both cohesion and variation. For instance, the Composer module modifies what is known as the "main_motif" in "melodic_info", upon the creation of a new Section. The main motif is used as a sort of building block to creater larger melodies in the Section module. By transforming the original main motif in such a way that it retains similarities to the main motif of previous sections, melodic cohesion throughout the entire composition is ensured. In general, the Composer module works to ensure that repetition occurs on multiple structural levels, such as motifs, melodies, chord sequences and full sections. Similarly, it also works towards keeping the mapping from abstract representation to metric representation consistent but varied throughout the generation of each section.
+The generative process is conducted by the top-level module "Composer". This module creates a sequence of Section objects, and a set of generative instructions. These instructions are passed to the constructor of each Section. They inform how the Section's melody and chords are generated, and how they are transformed to Metric representation, i.e. the timing and rhythm. The composer is in charge of ensuring both cohesion and variation, by varying some of the generative instructions from section to section, while keeping some consistent. How the melody instructions should change from section to section is stored in a dictionary called melodic outline. 
 
-Each section is generated based on instructions from the composer module. These instructions determine how to melody should be generated in the abstract hierarchical representation, and how it should be mapped to metric representation. Melodies are generated as a series of transformations of a main motif. Once a melody has been generated in the metric representation, it is passed to the Harmonizer module, which generates a chord sequence by formulating the harmonization problem as a Constraint Satisfaction Problem. 
+The melody of each Section is generated on the basis of a main motif, passed from the Composer. This main motif is then copied and transformed (based on intructions from Composer) in order generate a full melodic hierarchy. Once a melody has been generated as a melody hierarchy, it is mapped to metric representation, and passed to the Harmonizer module, which generates a chord sequence by formulating the harmonization problem as a Constraint Satisfaction Problem. 
 
-Once each section is generated, their metric representations are concatenated and transformed to MIDI-representation, which is analogous to performing a piece of music from sheet notation. 
+Once each section is generated, their metric representations are concatenated and transformed to MIDI-representation, which is analogous to performing a piece of music from sheet notation.
 
 # greatest hits:
 
