@@ -10,7 +10,6 @@ from copy import deepcopy
 class Composer:
 
     def __init__(self, seed):
-
         self.name = str(seed)
         random.seed(seed)
 
