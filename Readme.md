@@ -5,7 +5,7 @@ The generated music is output as a MIDI-file.
 
 In order to generate structured music, the system utilizes different hierarchical structures to represent different musical aspects: 
 
-* Metric representation. Expresses how the music behaves in time domain, much like sheet notation. 
+* Metric representation. Expresses how the music behaves in the time domain, much like sheet notation. 
     - Consists of a sequence of Bars, which contain either 3 or 4 Beats, which are then divided into 4 quarter beats.
     
 * Abstract, hierarchically grouped representation:
