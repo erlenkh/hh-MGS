@@ -1,4 +1,4 @@
-A music generation system that generates compositions consisting of sections containing melodies and chords. 
+A music generation system that generates compositions consisting of of melodies and chords. 
 The generated music is output as a MIDI-file. 
 
 
