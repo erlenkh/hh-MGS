@@ -24,6 +24,7 @@ Once each section is generated, their metric representations are concatenated an
 
 https://www.youtube.com/watch?v=fjEDNnID0U0
 
+# External libraries:
 
 The system uses the following libraries:
 
