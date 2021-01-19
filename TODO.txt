@@ -1,0 +1,42 @@
+Harmonizer:
+lag et chord-objekt som har en tonic, og så typen chord, maj min osv. ?
+må finne en tydeligere måte å markere half cadence og cadence på.
+
+lag en variabel: hvor mange akkorder skal en "loop vare". altså en slags "loop-length" variabel
+så finner den en akkordprogresjon som passer til alle melodisnuttene som kommer til å ligge under en gitt akkord
+
+FUNDAMENTAL FEIL I HARMONIZERN:
+bruker settet av noter innenfor en bar til å bestemme hva som er first og last?
+wtf. skjønner ikke helt hvorfor jeg tenkte dette.
+
+
+
+4
+Sections:
+forskjellige rytmer og spillestiler på motivet!!!!
+tenker: en hovedlenge per note i et motiv. og så kan noen av notene i motivet komme som "LEADNING NOTES". evt. kan man adde leadning notes emmanuelt?
+kanskje  bare forskyve et motiv med x antall beats i en retning?
+
+
+finne måte å legge inn half og full cadence på.
+noen sections kan ha half cadence på midten, de fleste kan ha cadence til slutt.
+må kunne fortelle harmonizer hvor cadencer skal være.
+
+hvordan representere rytme?
+
+Motif:
+rydd opp i kaoset
+
+O LA LA LA LA LA LA LA LA LA LA.
+
+bruk motivet til å lage leading melody til en akkord-progresjon!! altså. første note i hvert motif i en section bestemmes av et "grunnmotiv" gjerne med lengde 4.
+
+noe feil i 3/4
+
+
+en chord change per motif høres definitivt best ut.
+
+
+Noen ting må kunne overlappe fra to seksjoner. feks ved A, B, A, så ligner A på B når den kommer på nytt feks.
+
+wrap-around som et bevisst estetisk valg...
