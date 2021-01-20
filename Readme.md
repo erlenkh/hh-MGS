@@ -9,9 +9,9 @@ In order to generate structured music, the system utilizes different hierarchica
     - Consists of a sequence of Bars, which contain either 3 or 4 Beats, which are then divided into 4 quarter beats.
     
 * Abstract, hierarchically grouped representation:
-    - A full composition consists of a sequence of Sections, which each contain a melody and a chord sequence.
-    - Melodies consist of motifs, which then consist of notes. 
-    - Chord Sequences consist of chords, which then consist of notes.
+    - A full composition consists of a sequence of Sections, which each contain a Melody and a Chord Sequence.
+    - Melodies consist of Motifs, which consist of Notes. 
+    - Chord Sequences consist of Chords, which consist of Notes.
 
 # Generation
 The generative process is conducted by the top-level module "Composer". This module creates a sequence of Section objects, and a set of generative instructions. These instructions are passed to the constructor of each Section. They inform how the Section's melody and chords are generated, and how they are transformed to Metric representation, i.e. the timing and rhythm. The composer is in charge of ensuring both cohesion and variation, by varying some of the generative instructions from section to section, while keeping some consistent. For instance, how the melody instructions should change from section to section is stored in a dictionary called melodic outline. 
