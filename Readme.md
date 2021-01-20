@@ -1,4 +1,4 @@
-A music generation system that generates compositions consisting of melodies and chords. The system is designed based on the principle of hierarchical hybridization 
+A music generation system that generates compositions consisting of melodies and chords. The system's design is based on the principle of hierarchical hybridization 
  as suggested by [Carnovalini and Roda](https://www.researchgate.net/publication/340411945_Computational_Creativity_and_Music_Generation_Systems_An_Introduction_to_the_State_of_the_Art). The generated music is output as a MIDI-file. 
 
 # Representation
