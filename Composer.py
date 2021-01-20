@@ -43,12 +43,8 @@ class Composer:
 
         min_bars_per_motif = math.ceil((self.bm_length + self.offset) * self.motif_note_dur / self.beats_per_bar)
 
-        if min_bars_per_motif == 3:
-            self.bars_per_motif = 4
-        elif min_bars_per_motif > 4:
-            self.bars_per_motif = 8
-        else:
-            self.bars_per_motif = min_bars_per_motif
+        self.bars_per_motif = pow(2, math.ceil(math.log2(min_bars_per_motif))) # makes sure that the amount of bars per motif is a power of 2
+
 
         # generate the melodic outline (main motif and melodic structure) of each unique section:
         self.unique_sections_mo = self.gen_sections_mo()
