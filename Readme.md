@@ -2,10 +2,9 @@ A music generation system that generates compositions consisting of melodies and
  as suggested by [Carnovalini and Roda](https://www.researchgate.net/publication/340411945_Computational_Creativity_and_Music_Generation_Systems_An_Introduction_to_the_State_of_the_Art). The generated music is output as a MIDI-file. 
 
 # Representation
+In order to generate structured music, it the system utilizes different hierarchical structures to represent different musical aspects: 
 
-In order to generate structured music, the system utilizes different hierarchical structures to represent different musical aspects: 
-
-* Metric representation. Expresses how the music behaves in the time domain, much like sheet notation. 
+* Metric representation. Expresses music in the time domain, much like sheet notation. 
     - Consists of a sequence of Bars, which contain either 3 or 4 Beats, which are then divided into 4 quarter beats.
     
 * Abstract, hierarchically grouped representation:
