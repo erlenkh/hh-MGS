@@ -1,6 +1,5 @@
 
 class Bar:
-
     def __init__(self, number_of_beats, number_of_sub_beats):
         self.beats = []
         for i in range(number_of_beats):
